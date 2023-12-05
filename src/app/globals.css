@@ -1,27 +1,186 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 197, 40%, 25%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 142, 28%, 60%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 197, 40%, 25%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 142, 28%, 60%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+
+  body {
+    font-size: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    background: white;
+    
+  }
+  .display{
+    @apply  font-normal   text-[80px];
+  }
+  h1 {
+    @apply text-[40px]  font-normal font-atkinsonHyperlegible leading-[120px] md:text-[90px] ;
+  
+  }
+  h2 {
+    @apply text-[40px]  font-normal font-atkinsonHyperlegible  md:text-[75px] ;
+    
+  }
+  h3 {
+    @apply text-[40px] font-atkinsonHyperlegible  font-normal  md:text-[64px] ;
+  }
+  
+  h4 {
+    @apply text-xl text-black font-atkinsonHyperlegible leading-[48px] md:text-[40px] ;
+    }
+  h5 {
+    @apply text-[24px] text-[#000] font-poppins  font-semibold  md:text-[30px] ;
+
+  }
+  h6 {
+    @apply font-semibold text-xl ;
+
+  }
+  .blog-li > li{
+    @apply list-disc list-inside
+  }
+  p {
+    @apply text-base font-poppins font-normal  md:text-2xl ;
+    
+  }
+  .p_small {
+    @apply text-xs font-normal leading-6 md:text-sm;
+  }
+
+ 
+  .bg-style {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+  .sb {
+    @apply border border-red-500;
+  }
+  th,td{
+    @apply border-r
+  }
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.bg-image-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.drop-shadow{
+  filter: drop-shadow(0px 29px 44px rgba(150, 150, 150, 0.25));
+}
+.bg-multiple-images {
+  background-image: url('/assests/images/home/heroShadow.png'), url('/assests/images/home/hero.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+  max-width: 1920px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: calc(100% - 60px);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (min-width: 960px) {
+  .container {
+    width: calc(100% - 80px);
+  }
 }
+
+/* Admin panel */
+.container1 {
+  margin: 0 auto;
+  width: calc(100% - 100px);
+  
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: calc(100% - 180px);
+  }
+}
+.swiper-pagination-bullet-active{
+  background: #7EB693 !important;
+}
+th,td{
+  border-right: none !important;
+}
+
+
