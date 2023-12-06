@@ -77,6 +77,27 @@ export const features = [
     }
 ]
 
+export const industries = [
+    {
+        id: 1,
+        title: "Mortgage Newcomers",
+        description: "Get a head start on a robust career in the mortgage industry. Our tools are easy to learn and simple to use, which will help you build familiarity in the field faster. Shorten the learning curve of your own success and see what Guideline Buddy can do for you.",
+        image: "/assets/images/blog1.png"
+    },
+    {
+        id: 2,
+        title: "Seasoned Professionals",
+        description: "If you’ve been in the mortgage industry for a while, you understand that the industry could use a boost. Guideline Buddy is suitable for mortgage professionals of all levels. Stay competitive and streamline the mortgage process with technology that helps and never hinders you. ",
+        image: "/assets/images/f3.png"
+    },
+    {
+        id: 3,
+        title: "Brokerages",
+        description: "Gain an edge in a highly competitive industry with Guideline Buddy. Our platform helps you empower your employees while better serving your customers. Remove the limits to your own productivity with no heavy training or startup time required.",
+        image: "/assets/images/f3.png"
+    }
+]
+
 export const founders = [
     {
         id: 1,
@@ -95,5 +116,49 @@ export const founders = [
         title: "Jen Santiago",
         description: "Title/Position",
         image: "/assets/images/founder2.png"
+    },
+]
+
+
+export const pricing = [
+    {
+        id: 1,
+        title: "STANDARD PLAN",
+        subtitle: "$49/month",
+        href: '/',
+        description: [
+         
+            "Search Fannie Mae, Freddie Mac, FHA, VA, and USDA guidelines",
+            "25 prompts per month"
+         
+        ],
+        
+    },
+    {
+        id: 2,
+        title: "PRO PLAN",
+        subtitle: "$89/month",
+        href: '/',
+        description: [
+         "Search Fannie Mae, Freddie Mac, FHA, VA, and USDA guidelines",
+             "Search non-agency investors and wholesale lenders",
+             "Unlimited prompts"
+         
+        ],
+        
+    },
+    {
+        id: 3,
+        title: "ENTERPRISE PLAN",
+        subtitle: "$89/month",
+        href: '/',
+        description: [
+         
+           "Custom number of prompts",
+            "Custom access to investors and lenders",
+           "Live-onboarding training"
+         
+        ],
+        
     },
 ]

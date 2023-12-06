@@ -4,10 +4,12 @@ import Founders from './components/Founders'
 import AboutDetails from './components/AboutDetails'
 import AboutMission from './components/AboutMission'
 import AboutMissionVision from './components/AboutMissionVision'
+import AboutHero from './components/AboutHero'
 
 const Page = () => {
   return (
     <div className='sb'>
+      <AboutHero />
         <AboutMissionVision />
         <AboutMission />
         <AboutStory />
