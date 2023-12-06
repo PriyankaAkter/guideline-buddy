@@ -1,9 +1,11 @@
 import React from 'react'
 import BlogItems from './components/BlogItems'
+import BlogHero from './components/BlogHero'
 
 const Page = () => {
   return (
-    <div className='container'>
+    <div className='px-[141px] py-[202px] sb'>
+      <BlogHero />
         <BlogItems />
     </div>
   )

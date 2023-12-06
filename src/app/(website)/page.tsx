@@ -8,7 +8,7 @@ import HomeFeatures from './components/views/home/HomeFeatures'
 
 export default function Home() {
   return (
-    <div className='container sb'>
+    <div className=' sb'>
       <Hero />
       <HomeInnovation />
       <HomeAbout />

@@ -85,14 +85,14 @@
     
   }
   h3 {
-    @apply text-[40px] font-atkinsonHyperlegible  font-normal  md:text-[64px] ;
+    @apply text-[40px] font-atkinsonHyperlegible  font-normal   lg:text-[64px] ;
   }
   
   h4 {
     @apply text-xl text-black font-atkinsonHyperlegible leading-[48px] md:text-[40px] ;
     }
   h5 {
-    @apply text-[24px] text-[#000] font-poppins  font-semibold  md:text-[30px] ;
+    @apply text-[24px] text-[#000] font-poppins    md:text-[30px] ;
 
   }
   h6 {
@@ -142,8 +142,8 @@
 
 .container {
   margin: 0 auto;
-  width: calc(100% - 20px);
-  max-width: 1920px;
+  width: calc(100% - 144px);
+  max-width: 1640px;
 }
 
 @media (min-width: 640px) {
@@ -154,7 +154,7 @@
 
 @media (min-width: 960px) {
   .container {
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
   }
 }
 

@@ -17,11 +17,11 @@ const HomeWorking = () => {
         Working with Guideline Buddy means working with:
       </h3>
 
-      <div className="grid grid-cols-3 gap-20 relative mt-40 h-[528px]">
+      <div className="grid grid-cols-3 gap-32 relative mt-40 h-[528px] ">
         {items?.map((item: WorkType) => (
           <div
             key={item?.id}
-            className="px-[50px] flex flex-col items-center gap-12 bg-[#D1C9F1] rounded-[60px] "
+            className="  flex flex-col items-center gap-12 bg-[#D1C9F1] rounded-[60px] "
           >
             <div className="relative w-[157px] h-[157px]  -top-[80px] ">
               <Image src="/assets/images/img1.png" fill alt="image" />

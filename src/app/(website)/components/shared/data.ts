@@ -42,3 +42,58 @@ export const blogs = [
         image: "/assets/images/blog4.png"
     }
 ]
+
+
+export const features = [
+    {
+        id: 1,
+        title: "Efficiency and Time Saving",
+        description: "Guideline Buddy streamlines the mortgage process, saving professionals hours of manual searching.",
+        image: "/assets/images/f1.png"
+    },
+    {
+        id: 2,
+        title: "Accessible for All",
+        description: "Whether you’re a seasoned pro or a mortgage newcomer, our platform is accessible for all and intuitive to use.",
+        image: "/assets/images/f3.png"
+    },
+    {
+        id: 3,
+        title: "Accuracy and Risk Reduction",
+        description: "Ensure you have access to the latest guidelines, minimizing the potential for errors and disqualifications.",
+        image: "/assets/images/f3.png"
+    },
+    {
+        id: 4,
+        title: "Innovation and Industry Leadership",
+        description: "We are pioneers in our field, committed to setting new industry standards, putting mortgage professionals at the forefront",
+        image: "/assets/images/f4.png"
+    },
+    {
+        id: 5,
+        title: "Empower Your Clients",
+        description: "Our goal is to empower you to empower your clients and foster the dream of homeownership for all.",
+        image: "/assets/images/f1.png"
+    }
+]
+
+export const founders = [
+    {
+        id: 1,
+        title: "John Smith",
+        description: "Title/Position",
+        image: "/assets/images/founder2.png"
+    },
+    {
+        id: 2,
+        title: "Greg Jones",
+        description: "Title/Position",
+        image: "/assets/images/founder1.png"
+    },
+    {
+        id: 3,
+        title: "Jen Santiago",
+        description: "Title/Position",
+        image: "/assets/images/founder2.png"
+    },
+]
