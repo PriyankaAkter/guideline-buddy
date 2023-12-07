@@ -187,8 +187,7 @@ th,td{
 
  */
 
-
- /* @tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
  
@@ -265,14 +264,10 @@ th,td{
   }
 } */
 
-
-
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -280,57 +275,57 @@ th,td{
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
- 
+
     --primary: 197, 40%, 25%;
     --primary-foreground: 210 40% 98%;
- 
+
     --secondary: 142, 28%, 60%;
     --secondary-foreground: 222.2 47.4% 11.2%;
- 
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
- 
+
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
- 
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
- 
+
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
- 
+
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
- 
+
     --primary: 197, 40%, 25%;
     --primary-foreground: 222.2 47.4% 11.2%;
- 
+
     --secondary: 142, 28%, 60%;
     --secondary-foreground: 210 40% 98%;
- 
+
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
- 
+
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
- 
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -345,52 +340,44 @@ th,td{
   }
 
   h1 {
-    @apply text-[48px]  font-normal font-atkinsonHyperlegible md:leading-[120px] md:text-[90px] ;
-  
+    @apply text-[48px]  font-normal font-atkinsonHyperlegible md:leading-[120px] md:text-[90px];
   }
   h2 {
-    @apply text-[40px]  font-normal font-atkinsonHyperlegible  md:text-[75px] ;
-    
+    @apply text-[40px]  font-normal font-atkinsonHyperlegible  md:text-[75px];
   }
   h3 {
-    @apply text-[40px] font-atkinsonHyperlegible  font-normal   lg:text-[64px] ;
+    @apply text-[40px] font-atkinsonHyperlegible  font-normal   lg:text-[64px];
   }
-  
-  h4 {
-    @apply text-xl text-black font-atkinsonHyperlegible leading-[48px] md:text-[40px] ;
-    }
-  h5 {
-    @apply text-[24px] text-[#000] font-poppins    md:text-[30px] ;
 
+  h4 {
+    @apply text-xl text-black font-atkinsonHyperlegible leading-[48px] md:text-[40px];
+  }
+  h5 {
+    @apply text-[24px] text-[#000] font-poppins    md:text-[30px];
   }
   h6 {
-    @apply font-semibold text-xl ;
-
+    @apply font-semibold text-xl;
   }
-  .blog-li > li{
-    @apply list-disc list-inside
+  .blog-li > li {
+    @apply list-disc list-inside;
   }
   p {
-    @apply text-base font-poppins font-normal  md:text-2xl ;
-    
+    @apply text-base font-poppins font-normal  xl:text-2xl;
   }
   .p_small {
     @apply text-xs font-normal leading-6 md:text-sm;
   }
 
- 
   .bg-style {
     @apply bg-cover bg-center bg-no-repeat;
   }
   .sb {
     @apply border border-red-500;
   }
-  th,td{
-    @apply border-r
+  th,
+  td {
+    @apply border-r;
   }
-  
-  
-
 }
 
 .bg-image-wrapper {
@@ -400,16 +387,17 @@ th,td{
   width: 100vw;
   height: 100vh;
 }
-.drop-shadow{
+.drop-shadow {
   filter: drop-shadow(0px 29px 44px rgba(150, 150, 150, 0.25));
 }
 .bg-multiple-images {
-  background-image: url('/assests/images/home/heroShadow.png'), url('/assests/images/home/hero.png');
+  background-image: url("/assests/images/home/heroShadow.png"),
+    url("/assests/images/home/hero.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.swiper-pagination-bullets{
+.swiper-pagination-bullets {
   color: red;
 }
 
@@ -436,8 +424,6 @@ th,td{
   margin: 0 auto;
   max-width: 1200px;
   width: calc(100% - 100px);
-  
-  
 }
 
 @media (min-width: 640px) {
@@ -451,10 +437,11 @@ th,td{
     width: calc(100% - 180px);
   }
 }
-.swiper-pagination-bullet-active{
-  background: #7EB693 !important;
+.swiper-pagination-bullet-active {
+  background: #7eb693 !important;
 }
-th,td{
+th,
+td {
   border-right: none !important;
 }
 
@@ -462,34 +449,34 @@ th,td{
 /*Range Reset*/
 input[type="range"] {
   -webkit-appearance: none;
-   appearance: none;
-   background: transparent;
-   cursor: pointer;
-   width: 100%;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
 }
 
 /* Removes default focus */
 input[type="range"]:focus {
- outline: none;
+  outline: none;
 }
 
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
   /* background-color: #F29F05; */
-  background-color: #E2E8F0;
+  background-color: #e2e8f0;
   border-radius: 0.5rem;
-  height: 0.5rem;  
+  height: 0.5rem;
 }
 
 /* slider thumb */
 input[type="range"]::-webkit-slider-thumb {
- -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -6px; /* Centers thumb on the track */
 
   /*custom styles*/
-  background-color: #F29F05;
+  background-color: #f29f05;
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -504,10 +491,7 @@ input[type="range"]::-webkit-slider-thumb {
 /******** Firefox styles ********/
 /* slider track */
 input[type="range"]::-moz-range-track {
-  background-color: #F29F05;
+  background-color: #f29f05;
   border-radius: 0.5rem;
   height: 0.5rem;
 }
-
-
-
