@@ -9,9 +9,9 @@ import HomeInsights from './components/views/home/HomeInsights'
 
 export default function Home() {
   return (
-    <div className=' sb'>
+    <div className='  sb'>
       <Hero />
-      <HomeInnovation />
+      {/* <HomeInnovation /> */}
       <HomeAbout />
       <HomeWorking />
       <HomeVision />

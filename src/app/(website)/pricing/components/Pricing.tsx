@@ -7,7 +7,7 @@ const Pricing = () => {
   return (
     <div className="container sb">
       <h3 className="text-center">Pick The Plan That Works for You</h3>
-      <div className="grid grid-cols-3 gap-16 place-items-center mt-24 mb-64 sb">
+      <div className="grid grid-cols-3 gap-12 place-items-center mt-24 mb-64 sb">
         {pricing?.map((price: any) =>
           price?.id == 2 ? (
             <div className="h-[757px] px-[18px] py-4 border-4 border-[#D385DC] rounded-[60px] relative">

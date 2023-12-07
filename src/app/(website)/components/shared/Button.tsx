@@ -16,7 +16,7 @@ const Button = (props:ButtonType) => {
     <Link
    
       href={props.href}
-      className={twMerge("rounded-[33px]  text-xl  text-white px-8 py-2",
+      className={twMerge("rounded-[33px] text-base  md:text-xl  text-white px-5 md:px-8 py-2",
         props?.className
       )}
      

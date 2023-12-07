@@ -32,12 +32,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${atkinsonHyperlegible.variable} ${poppins.variable} w-[1920px] mx-auto`}>
-        <div>
+      <body className={`${atkinsonHyperlegible.variable} ${poppins.variable} `}>
+        
 
         {children}
-        <Footer />
-        </div>
+        {/* <Footer /> */}
+       
       </body>
     </html>
   )
