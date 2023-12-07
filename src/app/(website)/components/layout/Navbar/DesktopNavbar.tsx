@@ -7,7 +7,7 @@ const DesktopNavbar = () => {
     <div className="hidden 2xl:block ">
       <nav className="flex justify-between items-center container py-10">
         <Link href="/" className="flex justify-center items-center gap-2">
-          <div className="w-[320px] h-[49px] relative rounded-2xl">
+          <div className="w-[320px] h-[49px] relative ">
             <Image
               alt="Images"
               src="/assets/images/logo1.png"
