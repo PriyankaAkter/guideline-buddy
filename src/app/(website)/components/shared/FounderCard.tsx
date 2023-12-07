@@ -11,10 +11,13 @@ type FounderCardType = {
 
 const FounderCard: React.FC<FounderCardType> = ({ founder }) => {
   return (
-    <div className="bg-cover flex flex-col justify-end items-end px-16 pb-16 text-white bg-center relative h-[641px] rounded-[60px]" style={{backgroundImage: `url(${founder?.image})`}}>
-      <h3 className="text-white">{founder?.title}</h3>
+    <div
+      className='bg-cover flex flex-col justify-end items-end px-8 xl:px-16 pb-16 text-white bg-center relative h-[641px] rounded-[60px]'
+      style={{ backgroundImage: `url(${founder?.image})` }}
+    >
+      <h3 className='text-white'>{founder?.title}</h3>
 
-      <p className="text-3xl ">{founder?.description}</p>
+      <p className=' text-lg xl:text-3xl '>{founder?.description}</p>
     </div>
   );
 };
