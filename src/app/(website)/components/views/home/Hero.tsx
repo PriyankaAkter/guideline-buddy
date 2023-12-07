@@ -4,7 +4,7 @@ import Button from "../../shared/Button";
 
 const Hero = () => {
   return (
-    <div className="flex  justify-between items-center gap-10  py-36 container">
+    <div className="flex sb  justify-between items-center gap-10  py-36 container">
       <div className="w-[728px] sb ">
         <h3>Your Mortgage Compass for the Digital Age</h3>
         <p className="mb-10">Empowering professionals, enabling dreams</p>

@@ -10,7 +10,7 @@ const ContactForm = () => {
   } = useForm();
   //   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
   return (
-    <div>
+    <div className="">
       <div>
         <div className="flex gap-14 items-center py-36">
           <h3>Give us a shout</h3>

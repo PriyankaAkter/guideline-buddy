@@ -5,7 +5,7 @@ import Image from "next/image";
 const HomeFeatures = () => {
   return (
     <div className="grid gap-[200px] container">
-      <div className="grid grid-cols-2 gap-[52px]  ">
+      <div className="grid grid-cols-2 place-items-center gap-[52px]  ">
         <div className="  ">
           <h3>
             Choose Guideline Buddy <br />

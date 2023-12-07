@@ -142,7 +142,7 @@
 
 .container {
   margin: 0 auto;
-  width: calc(100% - 144px);
+  width: calc(100% - 4px);
   max-width: 1640px;
 }
 
