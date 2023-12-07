@@ -1,14 +1,14 @@
-import React from 'react'
-import BlogItems from './components/BlogItems'
-import BlogHero from './components/BlogHero'
+import React from "react";
+import BlogItems from "./components/BlogItems";
+import BlogHero from "./components/BlogHero";
 
 const Page = () => {
   return (
-    <div className='px-[141px] py-[202px] sb'>
+    <div className=' px-8 xl:px-[141px] py-10 xl:py-[202px] sb'>
       <BlogHero />
-        <BlogItems />
+      <BlogItems />
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
