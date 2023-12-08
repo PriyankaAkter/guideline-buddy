@@ -6,14 +6,14 @@ const Pricing = () => {
   return (
     <div className='container pb-20 xl:pb-64'>
       <h3 className='text-center'>Pick The Plan That Works for You</h3>
-      <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-20 xl:place-items-center mt-24  '>
+      <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 2xl:gap-20 xl:place-items-center mt-24  '>
         {pricing?.map((price: any, index: number) =>
           price?.id == 2 ? (
             <div
               key={index}
               className=' h-full xl:h-[757px] p-2 xl:px-[18px] xl:py-4 border-4 border-[#D385DC] rounded-[60px] relative'
             >
-              <button className='bg-[#5437CC] py-3 px-4 xl:px-14 text-white rounded-[60px] text-[20px] absolute -top-3 left-1/2 transform -translate-x-1/2'>
+              <button className='bg-[#5437CC] py-3 px-4 xl:px-14 text-white rounded-[60px] text-[20px] absolute -top-7 lg:-top-6 left-1/2 transform -translate-x-1/2'>
                 Most Popular
               </button>
               <div
@@ -25,7 +25,7 @@ const Pricing = () => {
                 {price?.description?.map((item: any, index: number) => (
                   <ul
                     key={index}
-                    className='list-disc text-2xl font-poppins  w-full xl:w-[320px]'
+                    className='list-disc text-xl xl:text-2xl font-poppins  w-full xl:w-[320px]'
                   >
                     <li>{item}</li>
                   </ul>
@@ -53,7 +53,7 @@ const Pricing = () => {
               {price?.description?.map((item: any, index: number) => (
                 <ul
                   key={index}
-                  className='list-disc text-2xl font-poppins  w-full xl:w-[320px]'
+                  className='list-disc text-xl xl:text-2xl font-poppins  w-full xl:w-[320px]'
                 >
                   <li>{item}</li>
                 </ul>

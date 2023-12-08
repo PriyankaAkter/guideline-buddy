@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogHero = () => {
   return (
-    <div>
+    <div className="">
       <h3>Discover the Latest Mortgage Insights</h3>
       <div className='bg-[#5C5959] w-full h-[2px]'></div>
       <div className='relative w-full max-w-[980px] aspect-[499/331] mt-32'>

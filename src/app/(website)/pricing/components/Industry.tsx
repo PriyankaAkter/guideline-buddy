@@ -10,24 +10,24 @@ const Industry = () => {
         Empowering Professionals <br />
         Across the Mortgage Industry
       </h3>
-      <div className='container xl:px-20'>
-        <div className='grid gap-20 xl:gap-[380px] py-20 xl:py-56'>
+      <div className='container 2xl:px-20'>
+        <div className='grid gap-20  py-20 xl:py-56'>
           {industries?.map((industry: Type, index: number) => (
             <div
               key={index}
-              className='flex flex-col lg:flex-row    justify-between items-center gap-10   '
+              className='flex flex-col lg:flex-row    justify-between items-center gap-10  2xl:gap-20 '
             >
               <div
                 className={
                   industry?.id % 2 == 0
-                    ? `w-full xl:w-[610px]   order-last`
-                    : `w-full xl:w-[610px]  order-last xl:order-first`
+                    ? `w-full xl:max-w-[610px]   order-last `
+                    : `w-full xl:max-w-[610px]  order-last lg:order-first`
                 }
               >
                 <h3>{industry?.title}</h3>
                 <p className='mb-10'>{industry?.description}</p>
               </div>
-              <div className='relative h-[300px] xl:h-[534px]  aspect-square'>
+              <div className='relative  h-[300px] xl:h-[534px]  aspect-square'>
                 <Image
                   src={industry?.image}
                   fill

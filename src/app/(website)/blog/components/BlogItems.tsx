@@ -6,7 +6,7 @@ import BlogCard from "../../components/shared/BlogCard";
 
 const BlogItems = () => {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-[60px] mt-20 xl:mt-[156px]'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-[60px] mt-20 xl:mt-[156px] '>
       {blogs?.map((blog: Type) => (
         <BlogCard key={blog?.id} blog={blog} />
       ))}

@@ -5,9 +5,9 @@ const FeatureNotice = () => {
   return (
     <div className='mt-20 xl:mt-40'>
       <div className='container bg-[#D1C9F1] rounded-[20px] xl:rounded-[60px] mx-auto'>
-        <div className=' grid grid-cols-1  2xl:grid-cols-2 place-items-center xl:gap-28  py-2 sm:py-10 xl:py-36 container'>
-          <div className='w-full 2xl:w-[728px]  '>
-            <h3>
+        <div className='sb grid grid-cols-1 2xl:gap-6 2xl:grid-cols-2 place-items-center px-4  py-2 sm:py-10 xl:py-12 xl:px-9 sb'>
+          <div className='w-full sb  '>
+            <h3 className="text-[48px]">
               ¡Atención! Profesionales que prefieren hablar Español! Buenas
               noticias:
             </h3>
