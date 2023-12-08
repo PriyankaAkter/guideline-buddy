@@ -7,48 +7,42 @@ import clsx from "clsx";
 import Link from "next/link";
 const MobileNavbar = () => {
   const [open, setOpen] = useState(false);
-
+  
   return (
-    <div className='bg-white 2xl:hidden py-5 w-screen '>
-      <nav className=' container '>
-        <div className='flex justify-between items-center  py-4'>
-          <Link href='/' className='flex justify-center items-center gap-2'>
-            <div className='w-[146px] md:w-[180px] md:h-[40px] h-[22px] relative '>
-              <Image
-                alt='Logo'
-                src='/assets/images/logo1.png'
-                fill
-                className='object-contain'
-              />
-            </div>
-          </Link>
+    <div className="bg-white 2xl:hidden py-5 w-screen">
+      <nav className="grid grid-cols-1 container gap-4 ">
+        <div className="flex justify-between items-center">
           <div
             onClick={() => {
               setOpen(!open);
             }}
           >
             {open ? (
-              <BiX className='w-6 md:w-10 h-6 md:h-10 text-[#5437CC]' />
+              <BiX className="w-6 2xl:w-8 h-6 2xl:h-8 text-primary" />
             ) : (
-              <BiMenu className='w-6 md:w-10 h-6 md:h-10 text-[#5437CC]' />
+              <BiMenu className="w-6 md:w-8 h-6 md:h-8 text-primary" />
             )}
           </div>
-        </div>
+          <Link href='/' className="flex justify-center items-center gap-2">
+          <div className="relative w-[146px] h-[22px] ">
+            <Image src="/assets/images/logo1.png" fill alt="logo" />
+          </div>
+            
+          </Link>
 
-        <div
-          className={clsx(
-            "py-32 h-screen",
-            open
-              ? "flex flex-col items-center gap-6 md:gap-8 text-xl md:text-3xl text-[#5437CC] font-bold"
-              : "hidden"
-          )}
-        >
-          <Link href='/'>Home</Link>
-          <Link href='/about'>About</Link>
-          <Link href='/features'>Features</Link>
-          <Link href='/pricing'>Pricings</Link>
-          <Link href='/blog'>Blog</Link>
-          <Link href='/contact'>Contact</Link>
+          <div className="w-8 md:w-[56px] h-8 md:h-[56px] relative rounded-full p-2 bg-primary flex justify-center items-center">
+            <AiOutlineShoppingCart className="text-white w-7 h-7" />
+          </div>
+        </div>
+        
+
+        <div className={clsx("py-32 h-screen", open ? "block" : "hidden")}>
+        <Link href="/">HOME</Link>
+             <Link href="/about">ABOUT</Link>
+             <Link href="/features">FEATURES</Link>
+             <Link href="/pricing">PRICING</Link>
+             <Link href="/blog">BLOG</Link>
+             <Link href="/contact">CONTACT</Link>
         </div>
       </nav>
     </div>

@@ -1,32 +1,23 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
-const DesktopNavbar = () => {
+const DesktopNavBar = () => {
   return (
-    <div className='hidden 2xl:block '>
-      <nav className='flex justify-between items-center container py-10'>
-        <Link href='/' className='flex justify-center items-center gap-2'>
-          <div className='w-[320px] h-[49px] relative '>
-            <Image
-              alt='Images'
-              src='/assets/images/logo1.png'
-              fill
-              className='object-contain'
-            />
+    <div className='flex justify-between items-center container pt-14 sb'>
+        <div className="relative w-[449px] h-[68px] ">
+            <Image src="/assets/images/logo1.png" fill alt="logo" />
           </div>
-        </Link>
-        <div className='flex justify-between items-center gap-[60px] text-[#5437CC] text-[18px] font-bold font-poppins'>
-          <Link href='/'>Home</Link>
-          <Link href='/about'>About</Link>
-          <Link href='/features'>Features</Link>
-          <Link href='/pricing'>Pricings</Link>
-          <Link href='/blog'>Blog</Link>
-          <Link href='/contact'>Contact</Link>
-        </div>
-      </nav>
+          <div className='flex justify-between items-center gap-[69px] text-[#5437CC] text-2xl font-bold font-atkinsonHyperlegible'>
+             <Link href="/">HOME</Link>
+             <Link href="/about">ABOUT</Link>
+             <Link href="/features">FEATURES</Link>
+             <Link href="/pricing">PRICING</Link>
+             <Link href="/blog">BLOG</Link>
+             <Link href="/contact">CONTACT</Link>
+          </div>
     </div>
-  );
-};
+  )
+}
 
-export default DesktopNavbar;
+export default DesktopNavBar
