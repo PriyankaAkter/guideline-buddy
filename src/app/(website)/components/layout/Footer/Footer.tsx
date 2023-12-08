@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import Button from "../../shared/Button";
 
 const Footer = () => {
   return (
     <div className="bg-[#0F1114] text-white">
       <div className="container ">
-        <div className="grid gap-10 lg:gap-[342px] grid-cols-1 lg:grid-cols-2">
-          <div className="mt-10 xl:my-40 ">
+        <div className="grid gap-10 2xl:gap-[342px] grid-cols-1 xl:grid-cols-2 place-items-center justify-items-stretch pt-10 xl:py-40  ">
+          <div className="">
             <h3>Stay in The Loop</h3>
             <p>
               Subscribe to our newsletter and follow us on social media to stay
@@ -16,10 +17,13 @@ const Footer = () => {
               exclusive insights.
             </p>
           </div>
-          <div className=""></div>
+          <div className="bg-white py-2 flex justify-between items-center rounded-xl pr-1 pl-8">
+            <p className="text-[#5C5959]">Join the conversation...</p>
+            <Button title="SignUp" href="/" className="py-[14px]  rounded-[10px] px-4 bg-[#DA61E6] text-[#1E1E1E]" />
+          </div>
         </div>
-        <div className="flex justify-between items-center pb-20">
-          <div className="relative w-[70px] h-[66px] md:w-[118px] md:h-[111px] ">
+        <div className="flex justify-between items-center pt-12 pb-20">
+          <div className="relative w-[70px] h-[66px] xl:w-[118px] xl:h-[111px] ">
             <Image src="/assets/images/logo.png" fill alt="logo" />
           </div>
           <div className="flex flex-col gap-2 xl:gap-10 items-center ">
@@ -33,11 +37,11 @@ const Footer = () => {
         </div>
         <div className="">
           <div className="bg-[#5C5959] h-[1px]"></div>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2  py-12">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2  py-12">
             <p className="text-base">
               2023 Guideline Buddy. All rights reserved.
             </p>
-            <div className="  w-full order-first md:order-last  text-base flex gap-8 justify-between xl:justify-start">
+            <div className="  w-full order-first md:order-last  text-base flex gap-8 lg:justify-between xl:justify-start">
               <Link href="/">Privacy Policy</Link>
               <Link href="/">Resources</Link>
               <Link href="/">Terms of Service</Link>

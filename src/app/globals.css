@@ -340,29 +340,29 @@ th,td{
   }
 
   h1 {
-    @apply text-[48px]  font-normal font-atkinsonHyperlegible md:leading-[120px] md:text-[90px];
+    @apply text-[48px]  font-normal font-atkinsonHyperlegible 2xl:leading-[120px] lg:text-[64px] 2xl:text-[90px];
   }
   h2 {
     @apply text-[40px]  font-normal font-atkinsonHyperlegible  md:text-[75px];
   }
   h3 {
-    @apply text-[40px] font-atkinsonHyperlegible  font-normal   lg:text-[64px];
+    @apply text-[40px] font-atkinsonHyperlegible  font-normal   lg:text-[48px] 2xl:text-[64px];
   }
 
   h4 {
-    @apply text-xl text-black font-atkinsonHyperlegible leading-[48px] md:text-[40px];
+    @apply text-xl text-black font-atkinsonHyperlegible leading-[48px] md:text-2xl 2xl:text-[40px];
   }
   h5 {
-    @apply text-[24px] text-[#000] font-poppins    md:text-[30px];
+    @apply text-[24px] text-[#000] font-poppins    lg:text-[28px] 2xl:text-[30px];
   }
   h6 {
-    @apply font-semibold text-xl;
+    @apply  text-base md:text-[26px] font-normal font-poppins;
   }
   .blog-li > li {
     @apply list-disc list-inside;
   }
   p {
-    @apply text-base font-poppins font-normal  xl:text-2xl;
+    @apply text-base font-poppins font-normal lg:text-xl 2xl:text-2xl;
   }
   .p_small {
     @apply text-xs font-normal leading-6 md:text-sm;

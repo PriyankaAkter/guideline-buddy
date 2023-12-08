@@ -1,6 +1,7 @@
 import Footer from "./components/layout/Footer/Footer";
-import DesktopNavbar from "./components/layout/Navbar/DesktopNavbar";
-import Navbar from "./components/layout/Navbar/Navbar";
+import Navbar from "./components/layout/NavBar/NavBar";
+// import DesktopNavbar from "./components/layout/Navbar/DesktopNavbar";
+
 
 function WebsiteLayout({ children }: { children: React.ReactNode }) {
   return (

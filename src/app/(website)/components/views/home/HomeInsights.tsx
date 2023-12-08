@@ -3,15 +3,15 @@ import Button from "../../shared/Button";
 const HomeInsights = () => {
   return (
     <div
-      className=' py-20 my-[135px] xl:my-60  flex flex-col justify-center items-center  gap-10 md:gap-20  text-white'
-      style={{
-        backgroundImage: `url('/assets/images/home.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className=' py-20 my-[135px] xl:my-60  flex flex-col justify-center items-center  gap-10 md:gap-20  '
+      // style={{
+      //   backgroundImage: `url('/assets/images/home.png')`,
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      //   backgroundRepeat: "no-repeat",
+      // }}
     >
-      <h3>
+      <h3 className="">
         Discover the Latest <br />
         Mortgage Insights
       </h3>

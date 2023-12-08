@@ -13,15 +13,15 @@ type WorkType = {
 
 const HomeWorking = () => {
   return (
-    <div className='pt-14 container'>
+    <div className='pt-14 container '>
       <h3 className='w-full xl:w-[846px]    mx-auto text-center'>
         Working with Guideline Buddy means working with:
       </h3>
-      <div className='mt-28 grid grid-cols-1 md:grid-cols-2 gap-y-20 md:gap-y-32  xl:grid-cols-3 gap-x-12 2xl:gap-32  relative  '>
+      <div className='mt-28 grid grid-cols-1 md:grid-cols-2 gap-y-20 md:gap-y-32  xl:grid-cols-3 gap-x-6 2xl:gap-[70px]  relative  '>
         {items?.map((item: WorkType) => (
           <div
             key={item?.id}
-            className='  flex flex-col items-center  bg-[#D1C9F1]  rounded-[20px] md:rounded-[60px] px-4 pb-10 text-center'
+            className='  flex flex-col items-center  bg-[#D1C9F1]  rounded-[20px] xl:rounded-[60px] px-4 pb-10 text-center'
           >
             <div className='relative w-24 h-24 sm:w-[157px] sm:h-[157px] -top-12 sm:-top-20  '>
               <Image src='/assets/images/img1.png' fill alt='image' />

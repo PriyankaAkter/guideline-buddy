@@ -1,6 +1,7 @@
 import React from "react";
-import DesktopNavbar from "./DesktopNavbar";
+
 import MobileNavbar from "./MobileNavbar";
+import DesktopNavbar from "./DesktopNavBar";
 
 const Navbar = () => {
   return (

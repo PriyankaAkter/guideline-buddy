@@ -10,10 +10,10 @@ const MobileNavbar = () => {
 
   return (
     <div className='bg-white 2xl:hidden py-5 w-screen '>
-      <nav className='grid grid-cols-1 container gap-4 '>
+      <nav className=' container '>
         <div className='flex justify-between items-center  py-4'>
           <Link href='/' className='flex justify-center items-center gap-2'>
-            <div className='w-[146px] h-[22px] relative '>
+            <div className='w-[146px] md:w-[180px] md:h-[40px] h-[22px] relative '>
               <Image
                 alt='Logo'
                 src='/assets/images/logo1.png'
@@ -28,9 +28,9 @@ const MobileNavbar = () => {
             }}
           >
             {open ? (
-              <BiX className='w-6 2xl:w-8 h-6 2xl:h-8 text-[#5437CC]' />
+              <BiX className='w-6 md:w-10 h-6 md:h-10 text-[#5437CC]' />
             ) : (
-              <BiMenu className='w-6 md:w-8 h-6 md:h-8 text-[#5437CC]' />
+              <BiMenu className='w-6 md:w-10 h-6 md:h-10 text-[#5437CC]' />
             )}
           </div>
         </div>
@@ -39,7 +39,7 @@ const MobileNavbar = () => {
           className={clsx(
             "py-32 h-screen",
             open
-              ? "flex flex-col items-center gap-6 text-xl text-[#5437CC] font-bold"
+              ? "flex flex-col items-center gap-6 md:gap-8 text-xl md:text-3xl text-[#5437CC] font-bold"
               : "hidden"
           )}
         >
