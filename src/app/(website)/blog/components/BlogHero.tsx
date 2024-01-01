@@ -1,18 +1,34 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../../components/shared/Button";
 
 const BlogHero = () => {
   return (
-    <div className="">
-      <h3>Discover the Latest Mortgage Insights</h3>
-      <div className='bg-[#5C5959] w-full h-[2px]'></div>
-      <div className='relative w-full max-w-[980px] aspect-[499/331] mt-32'>
-        <Image src='/assets/images/blog1.png' fill alt='Banner' />
+    <div className="container">
+      <h1 className="text-center pt-44">Discover the Latest Mortgage Insights</h1>
+      <div className="grid gap-[108px] grid-cols-2 items-center py-48">
+        <div className="relative w-[794px] h-[641px]">
+          <Image
+            // className="object-contain"
+            src="/assets/images/blog1.png"
+            fill
+            alt="Client"
+          />
+        </div>
+        <div>
+          <h2>Here is a title to highlight the featured article</h2>
+          <div className="flex gap-10 mb-10">
+            <h6>Date: Thur. Aug. 12, 2023</h6>
+            <h6>Author: John Doe</h6>
+          </div>
+          <p className="mb-10">
+            Here is a description of the featured blog article to give viewers a
+            glimpse into the subject matter. Make it engaging and don’t give too
+            much away so that they want to read more.
+          </p>
+          <Button href="/" title="Read More" />
+        </div>
       </div>
-
-      <h4 className='mt-5 xl:mt-9 text-2xl xl:text-5xl'>
-        Here is a title to highlight of a recent article
-      </h4>
     </div>
   );
 };

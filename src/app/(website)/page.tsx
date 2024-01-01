@@ -8,16 +8,22 @@ import HomeFeatures from "./components/views/home/HomeFeatures";
 import HomeInsights from "./components/views/home/HomeInsights";
 import HomeAccordion from "./components/views/home/HomeAccordion";
 import HomeAbout from "./components/views/home/HomeAbout";
+import PricingBlog from "./pricing/components/PricingBlog";
+import HomeCallToAction from "./components/views/home/HomeCallToAction";
+import HomeSponser from "./components/views/home/HomeSponser";
 export default function Home() {
   return (
     <div>
       <Hero />
-      <HomeInnovation />
+      <HomeSponser />
       <HomeAbout />
+      <HomeInnovation />
       <HomeWorking />
-      <HomeVision />
+      {/* <HomeVision /> */}
+      <HomeCallToAction />
       <HomeFeatures />
-      <HomeInsights />
+      {/* <HomeInsights /> */}
+      <PricingBlog />
       <HomeAccordion />
     </div>
   );

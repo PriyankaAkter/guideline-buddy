@@ -34,19 +34,30 @@ const items = [
     content:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
   },
-  // Add more sections as needed
 ];
 const HomeAccordion = () => {
   return (
-    <div className="container mx-auto  flex flex-col 2xl:flex-row">
-      <h3 className="w-full 2xl:w-[750px] text-center 2xl:text-left  ">Got Questions? <br />We’ve Got Answers.</h3>
-      <div className="pt-16 2xl:pt-0 pb-36">
-        <h5 className="text-3xl text-[#5437CC] font-bold mb-4">
+    <div className="container pb-[200px]">
+
+    
+    <div
+      className="rounded-[185px] py-[136px] px-[245px] "
+      style={{
+        background: "linear-gradient(288deg, #5437CC 58.09%, #D385DC 160.21%)",
+      }}
+    >
+      <div className="">
+        <h1 className="text-white text-center mb-3">
+          Got Questions? We’ve Got Answers.
+        </h1>
+        <h6 className="text-[#F9FAFB] text-[30px] text-center font-normal">
           Frequently Asked Questions
-        </h5>
-        <div className="h-[2px] bg-[#5437CC]"></div>
+        </h6>
+      </div>
+      <div className="">
         <Accordion items={items} />
       </div>
+    </div>
     </div>
   );
 };

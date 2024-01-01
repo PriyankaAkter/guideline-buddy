@@ -1,17 +1,19 @@
-import React from "react";
-import Hero from "./components/Hero";
-import Industry from "./components/Industry";
 import Pricing from "./components/Pricing";
-import HomeInsights from "../components/views/home/HomeInsights";
+import FeatureHero from "../features/components/featureHero";
+import FeatureCallToAction from "../features/components/FeatureCallToAction";
+import PricingBlog from "./components/PricingBlog";
+import PricingHeading from "./components/PricingHeading";
 import HomeAccordion from "../components/views/home/HomeAccordion";
 
 const Page = () => {
   return (
     <div>
-      <Hero />
+      
       <Pricing />
-      <Industry />
-      <HomeInsights />
+      <PricingHeading />
+      <FeatureHero />
+      <FeatureCallToAction />
+      <PricingBlog />
       <HomeAccordion />
     </div>
   );

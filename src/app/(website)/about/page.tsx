@@ -5,16 +5,17 @@ import AboutDetails from "./components/AboutDetails";
 import AboutMission from "./components/AboutMission";
 import AboutMissionVision from "./components/AboutMissionVision";
 import AboutHero from "./components/AboutHero";
+import AboutFounder from "./components/AboutFounder";
 
 const Page = () => {
   return (
-    <div>
+    <div className="container">
       <AboutHero />
       <AboutMissionVision />
       <AboutMission />
       <AboutStory />
       <AboutDetails />
-      <Founders />
+      <AboutFounder />
     </div>
   );
 };

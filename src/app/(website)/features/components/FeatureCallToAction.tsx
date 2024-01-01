@@ -1,24 +1,15 @@
-import Link from "next/link";
-import React from "react";
+import Button from "../../components/shared/Button";
 
 const FeatureCallToAction = () => {
   return (
-    <div className='max-w-[1335px] py-16 xl:py-40 bg-[#5437CC] my-36 rounded-[20px] xl:rounded-[60px] mx-auto text-white flex flex-col justify-center items-center gap-16'>
-      <h3 className='text-center'>
-        Short Headline/
-        <br />
-        Call to Action
-      </h3>
-      <Link
-        href='/'
-        className='rounded-[33px]  text-xl  text-white px-12 py-3 w-fit'
-        style={{
-          background:
-            "linear-gradient(90deg, #EAB9F0 -14.08%, #DA61E6 120.17%)",
-        }}
-      >
-        Get Started
-      </Link>
+    <div className="container py-[200px]">
+
+    <div style={{background:"linear-gradient(291deg, #5437CC 55.93%, #D385DC 154.26%)"}} className=' rounded-[20px] 2xl:rounded-[100px] mx-auto   py-24 flex flex-col items-center '>
+      <h1 className='text-center text-white mb-20'>
+      See Guideline Buddy in <br />Action - Schedule a Demo
+      </h1>
+      <Button href="/" title="Get Started" className="py-[14px] px-14 w-fit drop-shadow-lg" />
+    </div>
     </div>
   );
 };

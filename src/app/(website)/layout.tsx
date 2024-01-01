@@ -1,5 +1,7 @@
 import Footer from "./components/layout/Footer/Footer";
-import Navbar from "./components/layout/NavBar/NavBar";
+import DesktopNB from "./components/layout/Navbar/DesktopNB";
+
+
 // import DesktopNavbar from "./components/layout/Navbar/DesktopNavbar";
 
 
@@ -8,7 +10,7 @@ function WebsiteLayout({ children }: { children: React.ReactNode }) {
     <div>
       {/* <Navbar /> */}
       {/* <DesktopNavbar /> */}
-      <Navbar />
+      <DesktopNB />
       {children}
       {/* <NewsLetter /> */}
       <Footer />

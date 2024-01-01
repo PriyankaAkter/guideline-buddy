@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { BiDevices } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Button from "./Button";
 
 type BlogCardType = {
   blog: Type;
@@ -11,19 +12,15 @@ type BlogCardType = {
 
 const BlogCard: React.FC<BlogCardType> = ({ blog }) => {
   return (
-    <div className='grid gap-8  '>
-      <div className='relative max-w-[400px] w-full aspect-square  '>
-        <Image src={blog?.image} fill alt='Banner' />
+    <div className="grid gap-10 ">
+      <div className="relative w-[506px] h-[457px]">
+        <Image src={blog?.image} fill alt="Blog" className="rounded-[40px]" />
       </div>
-      <div className='grid  px-3'>
-        <h4 className='text-2xl xl:text-[40px] mb-6'>{blog?.title}</h4>
+      <div className="grid">
+        <h5 className=" mb-5">{blog?.title}</h5>
 
-        <p className='text-base xl:text-2xl '>{blog?.description}</p>
-        <Link href='/' className='flex justify-end'>
-          <FaArrowRightLong className='text-[#5C5959] lg:w-9 lg:h-9 w-5 h-5 ' />
-        </Link>
-        <hr className='text-[#5C5959]' />
-        {/* <div className="w-[453px] h-[4px] text-[#5C5959]"></div> */}
+        <p className="text-base 2xl:text-[18px] mb-12 text-[#6B7280]">{blog?.description}</p>
+        <Button href="/" title="Read More" className="w-fit" />
       </div>
     </div>
   );

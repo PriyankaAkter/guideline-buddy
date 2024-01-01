@@ -5,19 +5,19 @@ export const items = [
     {
         id: 1,
         title: "AI as a Friend",
-        description: "We’re democratizing and demystifying AI into a trusted partner to help guide your work and simplify your life.",
+        description: "We’re making AI accessible and easy to understand so it becomes your trusted assistant that simplifies your life and guides your work.",
         image: "/"
     },
     {
         id: 2,
         title: "Streamlined Success",
-        description: "We optimize at every corner, creating a seamless lending experience from application to approval.",
+        description: "We optimize at every turn, creating a smooth user experience from signing up to finding the exact guideline you need to move on to the next task.",
         image: "/"
     },
     {
         id: 2,
         title: "Personalized Solutions",
-        description: "We deliver customized, data-driven solutions, recommendations, and insights to simplify to mortgage process for every user.",
+        description: "Every chat is personalized, giving you tailored recommendations and insights to your questions. It makes loan structuring simpler and faster, just for you!",
         image: "/"
     }
 ]
@@ -40,6 +40,24 @@ export const blogs = [
         title: "Here is a blog title on one to two lines of text",
         description: "Very brief description to get viewer to click and continue to read",
         image: "/assets/images/blog4.png"
+    },
+    {
+        id: 4,
+        title: "Here is a blog title on one to two lines of text",
+        description: "Very brief description to get viewer to click and continue to read",
+        image: "/assets/images/blog2.png"
+    },
+    {
+        id: 5,
+        title: "Here is a blog title on one to two lines of text",
+        description: "Very brief description to get viewer to click and continue to read",
+        image: "/assets/images/blog3.png"
+    },
+    {
+        id: 6,
+        title: "Here is a blog title on one to two lines of text",
+        description: "Very brief description to get viewer to click and continue to read",
+        image: "/assets/images/blog4.png"
     }
 ]
 
@@ -49,31 +67,31 @@ export const features = [
         id: 1,
         title: "Efficiency and Time Saving",
         description: "Guideline Buddy streamlines the mortgage process, saving professionals hours of manual searching.",
-        image: "/assets/images/f1.png"
+        image: "/assets/images/f4.png"
     },
     {
         id: 2,
         title: "Accessible for All",
         description: "Whether you’re a seasoned pro or a mortgage newcomer, our platform is accessible for all and intuitive to use.",
-        image: "/assets/images/f3.png"
+        image: "/assets/images/f5.png"
     },
     {
         id: 3,
         title: "Accuracy and Risk Reduction",
         description: "Ensure you have access to the latest guidelines, minimizing the potential for errors and disqualifications.",
-        image: "/assets/images/f3.png"
+        image: "/assets/images/f6.png"
     },
     {
         id: 4,
         title: "Innovation and Industry Leadership",
         description: "We are pioneers in our field, committed to setting new industry standards, putting mortgage professionals at the forefront",
-        image: "/assets/images/f4.png"
+        image: "/assets/images/f7.png"
     },
     {
         id: 5,
         title: "Empower Your Clients",
         description: "Our goal is to empower you to empower your clients and foster the dream of homeownership for all.",
-        image: "/assets/images/f1.png"
+        image: "/assets/images/f8.png"
     }
 ]
 
@@ -123,7 +141,7 @@ export const founders = [
 export const pricing = [
     {
         id: 1,
-        title: "STANDARD PLAN",
+        title: "Standard Plan",
         subtitle: "$49/month",
         href: '/',
         description: [
@@ -136,7 +154,7 @@ export const pricing = [
     },
     {
         id: 2,
-        title: "PRO PLAN",
+        title: "Pro Plan",
         subtitle: "$89/month",
         href: '/',
         description: [
@@ -149,7 +167,7 @@ export const pricing = [
     },
     {
         id: 3,
-        title: "ENTERPRISE PLAN",
+        title: "Enterprise Plan",
         subtitle: "$89/month",
         href: '/',
         description: [
@@ -160,5 +178,26 @@ export const pricing = [
          
         ],
         
+    },
+]
+
+
+
+ export const sponser = [
+    {
+        id: 1,
+        image: "/assets/images/s1.png"
+    },
+    {
+        id: 2,
+        image: "/assets/images/s2.png"
+    },
+    {
+        id: 3,
+        image: "/assets/images/s3.png"
+    },
+    {
+        id: 4,
+        image: "/assets/images/s4.png"
     },
 ]

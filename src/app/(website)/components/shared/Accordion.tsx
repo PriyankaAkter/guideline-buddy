@@ -13,22 +13,23 @@ const Accordion = ({ items }:any) => {
   };
 
   return (
-    <div className='grid gap-5 2xl:gap-12  mt-14'>
+    <div className='grid gap-5 2xl:gap-12  mt-24 w-[961px] mx-auto'>
       {items.map((item:any, index:any) => (
-        <div key={index} className="mb-4 ">
+        <div key={index} className="">
           <div
-            className="flex justify-between items-center md:pt-6 md:pb-4 py-2 px-4 md:pl-10 md:pr-16 cursor-pointer rounded-[24px] bg-[#E7E3F8] md:gap-40  2xl:gap-[200px] "
+            className="py-7 px-10 flex items-center justify-between cursor-pointer rounded-[20px] bg-[#EEE5FF]"
             onClick={() => toggleAccordion(index)}
           >
-            <h6 className="text-lg font-semibold text-[#5437CC]">{item.title}</h6>
+            <span className="w-[581px] text-[26px] font-normal font-poppins text-[#5437CC]">{item.title}</span>
             
 
             <FaPlus className="w-7 h-7 text-[#5437CC]" />
             
           </div>
           {activeIndex === index && (
-            <div className="p-4 bg-white">
-              <p>{item.content}</p>
+            <div className="py-7 px-10 rounded-[20px] bg-[#EEE5FF] mt-3">
+              
+              <span className="text-[26px] font-normal font-poppins text-[#5437CC]">{item.content}</span>
             </div>
           )}
         </div>

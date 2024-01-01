@@ -1,5 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
+import Button from "../../components/shared/Button";
 
 const ContactForm = () => {
   const {
@@ -10,66 +11,78 @@ const ContactForm = () => {
   } = useForm();
   //   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
   return (
-    <div className='container'>
+    <div className="container pt-[175px] pb-[200px]">
       <div>
-        <div className='flex flex-col lg:flex-row gap-8 lg:gap-14 lg:items-center py-12 md:py-20 2xl:py-36 '>
-          <h3>Give us a shout</h3>
-          <p>
-            little blurb about reaching <br />
-            out on one to two lines of text
+        <div className="text-center">
+          <h1>Give us a shout</h1>
+          <p className="text-xl text-[#6B7280]">
+          Have a question about how Guideline Buddy can <br />help you? Leave us a message below!
           </p>
         </div>
-
-        <form className='max-w-[1394px] mx-auto rounded-[20px] lg:rounded-[60px] mb-16 md:mb-32 2xl:mb-[281px] bg-[#0F1114] px-8 xl:px-32 pb-16 pt-24 grid gap-12'>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-[72px] '>
-            <div className='w-full '>
-              <input
-                className='border-b w-full border-b-[#F8F6F8]   pb-3 bg-inherit text-white placeholder:text-white lg:placeholder:text-2xl '
-                {...register("name", { required: true })}
-                placeholder='Full Name*'
-              />
-              {errors.name && <span>This field is required</span>}
+        <div className="mt-24 rounded-[20px] lg:rounded-[60px] bg-[#EEE5FF]  py-[106px] pl-[121px] pr-[76px] flex gap-[231px]">
+          <div>
+            <p className="font-bold mb-5">Guideline Buddy LLC</p>
+            <div className="grid gap-3">
+            <p>74 E Glenwood Ave </p>
+            <p>Unit 5202 Smyrna, DE 19977</p>
+            <p>Hey@guidelinebuddy.com</p>
             </div>
-            <div className='w-full '>
-              <input
-                className='border-b w-full border-b-[#F8F6F8] pb-3 bg-inherit text-white placeholder:text-white lg:placeholder:text-2xl '
-                {...register("email", { required: true })}
-                placeholder='Email Address*'
-              />
-              {errors.email && <span>This field is required</span>}
+            
+          </div>
+          <form className="grid gap-14 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 ">
+              <div className="w-full ">
+                <input
+                  className="border w-full border-[#374151]   bg-white text-[#6B7280] placeholder:text-[#6B7280] placeholder:text-[18px] py-7 px-5 rounded-[30px]"
+                  style={{ outline: "none" }}
+                  {...register("firstName", { required: true })}
+                  placeholder="First Name*"
+                />
+                {errors.firstName && <span>This field is required</span>}
+              </div>
+              <div className="w-full ">
+                <input
+                  className="border w-full border-[#374151]   bg-white text-[#6B7280] placeholder:text-[#6B7280] placeholder:text-[18px] py-7 px-5 rounded-[30px]"
+                  style={{ outline: "none" }}
+                  {...register("lastName", { required: true })}
+                  placeholder="Last Name*"
+                />
+                {errors.lastName && <span>This field is required</span>}
+              </div>
             </div>
-          </div>
-          <div className='w-full '>
-            <input
-              className='border-b w-full border-b-[#F8F6F8] pb-3 bg-inherit text-white placeholder:text-white lg:placeholder:text-2xl '
-              {...register("subject", { required: true })}
-              placeholder='Message Subject*'
-            />
-            {errors.name && <span>This field is required</span>}
-          </div>
-          <textarea
-            name='message'
-            cols={30}
-            rows={10}
-            placeholder='Message*'
-            className='placeholder:text-white   lg:placeholder:text-2xl bg-inherit border-b w-full border-b-[#F8F6F8]'
-          ></textarea>
-          <div className='text-right'>
-            <input
-              type='submit'
-              style={{
-                background:
-                  "linear-gradient(90deg, #D385DC -7.88%, #5437CC 111.68%)",
-              }}
-              className='py-3 lg:py-4 px-5 lg:px-[73px] rounded-[60px] text-white text-base lg:text-2xl w-fit '
-            />
-          </div>
-        </form>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 ">
+              <div className="w-full ">
+                <input
+                  className="border w-full border-[#374151]   bg-white text-[#6B7280] placeholder:text-[#6B7280] placeholder:text-[18px] py-7 px-5 rounded-[30px]"
+                  style={{ outline: "none" }}
+                  {...register("email ", { required: true })}
+                  placeholder="Email *"
+                />
+                {errors.email && <span>This field is required</span>}
+              </div>
+              <div className="w-full ">
+                <input
+                  className="border w-full border-[#374151]   bg-white text-[#6B7280] placeholder:text-[#6B7280] placeholder:text-[18px] py-7 px-5 rounded-[30px]"
+                  style={{ outline: "none" }}
+                  {...register("phone", { required: true })}
+                  placeholder="phone*"
+                />
+                {errors.phone && <span>This field is required</span>}
+              </div>
+            </div>
 
-        <div className='pb-20 xl:pb-36'>
-          <h4 className='mb-4 text-4xl lg:text-5xl'>Guideline Buddy</h4>
-          <p className='font-bold'>Address Line 1</p>
-          <p>Address information on two lines of text</p>
+            <textarea
+              name="message"
+              cols={30}
+              rows={10}
+              placeholder="Message *"
+              style={{ outline: "none" }}
+              className="border w-full border-[#374151]   bg-white text-[#6B7280] placeholder:text-[#6B7280] placeholder:text-[18px] py-7 px-5 rounded-[30px]"
+            ></textarea>
+            <div className="text-right">
+            <Button href="/" title="Send" className="py-[14px] px-14" />
+            </div>
+          </form>
         </div>
       </div>
     </div>

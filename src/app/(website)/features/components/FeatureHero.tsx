@@ -1,46 +1,49 @@
 import Image from "next/image";
-import React from "react";
 import Button from "../../components/shared/Button";
+import FeatureCard from "./FaetureCard";
 
 const FeatureHero = () => {
   return (
-    <div className='grid gap-10 xl:gap-24 2xl:gap-[200px] container pt-20 2xl:pt-36 pb-10 xl:pb-[140px] 2xl:pb-[185px]'>
-      <div className='grid grid-cols-1 2xl:grid-cols-2 gap-14 2xl:gap-[111px] 2xl:place-items-center '>
-        <div className='order-last 2xl:order-first  '>
-          <h3>
-            Looking for investor <br />
-            and lender guidelines?
-          </h3>
-          <h5 className='mt-8 mb-4 font-semibold'>
-            Say hello to Buddy, our AI chatbot!
-          </h5>
-          <p className='mb-10'>
-            He&apos;s got your back. Just tell him what you need, and he&apos;ll
-            give you a quick summary with all the info you&apos;re looking for.
-            Easy peasy, right? Go ahead, ask away! best.
-          </p>
+    <div className="pt-[180px] grid gap-[200px]">
+      <FeatureCard
+        title="Looking for investor and lender guidelines?"
+        subTitle="He's got your back. Just tell him what you need, and he'll give you
+            a quick summary with all the info you're looking for. Easy peasy,
+            right? Go ahead, ask away!"
+        image="/assets/images/f1.png"
+      />
+
+      <div className="grid grid-cols-2 items-center gap-[141px]    container">
+      <div className="relative w-[890px] h-[651px] -ml-[181px]">
+          <Image
+            src="/assets/images/f2.png"
+            fill
+            alt="feature"
+            className="rounded-[60px]"
+          />
         </div>
-        <div className=' relative   lg:h-[509px]  aspect-[298/195]'>
-          <Image src='/assets/images/feature1.png' fill alt='Banner' />
-        </div>
-      </div>
-      <div className='grid grid-cols-1 2xl:grid-cols-2 gap-14 2xl:gap-[111px] 2xl:place-items-center '>
-        <div className='relative   lg:h-[509px]  aspect-[298/195]'>
-          <Image src='/assets/images/feature2.png' fill alt='Banner' />
-        </div>
-        <div className=''>
-          <h3>
-            The right answers <br />
-            right at your fingertips
-          </h3>
-          <p className='mb-10'>
+        <div>
+          <h2 className="mb-7">The right answers right at your fingertips</h2>
+          <p className="mb-20 text-[#6B7280] text-[18px]">
             Make sure you stay in the loop with real-time updates on investor
-            guidelines. Plus, you&apos;ll get notifications whenever there are
-            changes, so you&apos;re never caught off guard. It&apos;s like
-            having all the information you need, right when you need it!
+            guidelines. Plus, you'll get notifications whenever there are
+            changes, so you're never caught off guard. It's like having all the
+            information you need, right when you need it!
           </p>
+          <Button
+            href="/"
+            title="Get Started"
+            className="py-[14px] px-14 w-fit "
+          />
         </div>
+        
       </div>
+
+      <FeatureCard
+        title="Stay organized and keep tabs on important chats"
+        subTitle="Whether you're working on a loan or any other task that needs revisiting, just mark it as your favorite. That way, you can come back to it whenever you're ready to wrap things up, making your workflow smooth and efficient."
+        image="/assets/images/f3.png"
+      />
     </div>
   );
 };

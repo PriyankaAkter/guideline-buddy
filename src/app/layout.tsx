@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import { Atkinson_Hyperlegible,Poppins } from 'next/font/google'
 import './globals.css'
 import Footer from './(website)/components/layout/Footer/Footer';
-import DesktopNavBar from './(website)/components/layout/NavBar/DesktopNavBar';
-import NavBar from './(website)/components/layout/NavBar/NavBar';
+
 
 const atkinsonHyperlegible = Atkinson_Hyperlegible({
   weight: ["400","700"],
@@ -38,7 +37,7 @@ export default function RootLayout({
         
 
         {children}
-        {/* <Footer /> */}
+        
        
       </body>
     </html>

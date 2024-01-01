@@ -1,11 +1,13 @@
 import React from "react";
 import BlogItems from "./components/BlogItems";
 import BlogHero from "./components/BlogHero";
+import BlogSearch from "./components/BlogSearch";
 
 const Page = () => {
   return (
-    <div className=' px-3 lg:px-[141px] py-10 xl:py-[202px] '>
+    <div className=''>
       <BlogHero />
+      <BlogSearch />
       <BlogItems />
     </div>
   );
