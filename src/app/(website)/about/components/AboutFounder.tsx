@@ -4,10 +4,10 @@ import Button from "../../components/shared/Button";
 
 const AboutFounder = () => {
   return (
-    <div className="py-[200px] grid grid-cols-2 gap-28 place-items-center">
-      <div className="relative w-[794px] h-[641px]">
+    <div className=" grid grid-cols-2 gap-28 items-center  py-[200px] ">
+      <div className="relative w-[794px] h-[738px] ">
         <Image
-          className="object-contain"
+          className="object-contain rounded-[30px]"
           src="/assets/images/founder1.png"
           fill
           alt="Client"
@@ -16,17 +16,10 @@ const AboutFounder = () => {
       <div className="">
         <h2 className="text-[#111827] mb-3">Marc Hernandez</h2>
         <h5 className="text-[#0F1114] mb-10 traking-[1.2px]">Founder</h5>
-        <h5 className="text-[#6B7280] mb-16">
-          With a passion for empowering under-served and minority communities,
-          Marc has built an impressive career spanning two decades as an
-          accomplished mortgage banking executive, consistently demonstrating
-          his commitment to breaking down barriers in the financial industry.{" "}
-          <br /> <br />
-          Marc is a member of the National Association of Hispanic <br />
-          Real Estate Professionals (NAHREP) and actively promotes homeownership
-          in underserved communities. He has also served as President of the
-          Illinois Mortgage Bankers , <br />
-          Association (IMBA) in 2017.
+        <h5 className="text-[#6B7280] font-normal mb-16">
+        With an unwavering dedication to empowering underserved and minority communities, Marc has embarked on an extraordinary two-decade journey as a trailblazing executive in the mortgage banking industry. Continuously shattering barriers, he has earned prestigious recognition, including being honored as a Rising Star by HousingWire. 
+
+Marc's commitment to his craft is evident through his more than decade-long membership with the National Association of Hispanic Real Estate Professionals (NAHREP) and his influential role as President of the Illinois Mortgage Bankers Association (IMBA). Notably, Marc proudly holds the esteemed Certified Mortgage Banker (CMB) designation and has successfully completed the Future Leaders program from the Mortgage Bankers Association (MBA).
         </h5>
         <Button href="/" title="Learn More About Marc" />
       </div>

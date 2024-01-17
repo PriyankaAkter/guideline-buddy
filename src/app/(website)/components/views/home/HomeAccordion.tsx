@@ -3,36 +3,36 @@ import Accordion from "../../shared/Accordion";
 const items = [
   {
     title:
-      "So, what's the deal with Guideline Buddy? How can he actually help me out?",
+      "So, what's the deal with Guideline Buddy? How can it actually help me out?",
     content:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      "Guideline Buddy, also known as Buddy, is an AI-powered chatbot that's trained to understand investor and lender guidelines. Just ask specific questions, and he'll respond in plain language, saving you time from sifting through PDFs. You can find the exact guideline you need hassle-free! ",
   },
   {
     title: "Who can benefit the most from using Guideline Buddy, you may ask?",
     content:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      "Buddy is a game-changer for anyone in the mortgage business who qualifies borrowers. Loan Officers, LOAs, Processors, Underwriters, and more can easily access and search guidelines. So, whether you're a newbie or seasoned veteran, Buddy saves you valuable time!",
   },
   {
     title:
-      "So, how does Guideline Buddy make sure that the guidelines are always up-to-date?",
+      "Can't chatbots like ChatGPT, Bard, or Claude 2 help me in the same way?",
     content:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      "Well, here's the thing, Large Language Models (LLMs) are trained on general knowledge, not the nitty-gritty investor and lender guidelines that mortgage pros need to search. And since agency guidelines span thousands of pages, LLMs can only process a limited amount of text at once. That's where Guideline Buddy comes in! He’s specifically built to handle the massive amount of pages that investor and lender guidelines can be.",
   },
   {
     title:
-      "Hey, are there any resources out there to help me get started with Guideline Buddy?",
+      "So, I’m wondering how Guideline Buddy sets itself apart from other mortgage guideline chatbots?",
     content:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      "Here's the scoop, our main goal is to assist mortgage pros in searching guidelines. We don't mix our product with other services or make it exclusive to employees of certain companies. Now, don't get us wrong - we're not saying those things are bad. We just believe that focusing on one core function that's accessible to everyone is the smartest way to provide the best product for your hard-earned money.",
   },
   {
-    title: "How secure is my data and information when using Guideline Buddy?",
+    title: "So, how do you ensure that the guidelines are always up-to-date? ",
     content:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      "Well, Buddy stays on top of the latest guidelines and learns them as soon as they're released. Plus, he keeps you in the loop by sharing the news about the latest guidelines right away. No need to worry about using outdated guidelines and making a mistake when qualifying a borrower.",
   },
   {
-    title: "What kind of customer support does Guideline Buddy offer, you ask?",
+    title: "Hey, are there any resources out there to help me get started?",
     content:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      "Chatting with Buddy is super intuitive and user-friendly. If you ever need help learning your way around the platform, just ask Buddy directly! He'll give you clear instructions on how to make the most of your experience and effortlessly get the hang of it.",
   },
 ];
 const HomeAccordion = () => {

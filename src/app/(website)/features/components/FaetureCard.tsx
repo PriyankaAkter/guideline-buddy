@@ -20,19 +20,19 @@ const FeatureCard = ({title,subTitle, image, link}:featureCardType) => {
         backgroundSize: "cover",
       }}
     >
-      <div className="container grid grid-cols-2 items-center gap-[211px] ">
-        <div>
+      <div className="container grid grid-cols-2 items-center">
+        <div className="w-[728px]">
           <h2 className="mb-7">{title}</h2>
           <p className="mb-20 text-[#6B7280] text-[18px]">
             {subTitle}
           </p>
           <Button
             href="/"
-            title="Get Started"
+            title="Start Searching"
             className="py-[14px] px-14 w-fit "
           />
         </div>
-        <div className="relative w-[890px] h-[651px] ">
+        <div className="relative w-[911px] h-[651px] 2xl:w-[980px]">
           <Image src={image} fill alt="feature" className="rounded-[60px]" />
         </div>
       </div>

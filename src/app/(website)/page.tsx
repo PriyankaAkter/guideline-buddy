@@ -11,19 +11,21 @@ import HomeAbout from "./components/views/home/HomeAbout";
 import PricingBlog from "./pricing/components/PricingBlog";
 import HomeCallToAction from "./components/views/home/HomeCallToAction";
 import HomeSponser from "./components/views/home/HomeSponser";
+import HomeDetails from "./components/views/home/HomeDetails";
 export default function Home() {
   return (
     <div>
       <Hero />
       <HomeSponser />
       <HomeAbout />
+      <HomeDetails />
       <HomeInnovation />
       <HomeWorking />
       {/* <HomeVision /> */}
       <HomeCallToAction />
       <HomeFeatures />
       {/* <HomeInsights /> */}
-      <PricingBlog />
+      {/* <PricingBlog /> */}
       <HomeAccordion />
     </div>
   );

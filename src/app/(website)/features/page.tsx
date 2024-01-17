@@ -10,8 +10,8 @@ const Page = () => {
   return (
     <div>
       <FeatureHero />
-      <FeatureItems />
       <FeatureNotice />
+      <FeatureItems />
       <FeatureCallToAction />
     </div>
   );

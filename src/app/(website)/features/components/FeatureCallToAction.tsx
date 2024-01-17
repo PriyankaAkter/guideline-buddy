@@ -8,7 +8,7 @@ const FeatureCallToAction = () => {
       <h1 className='text-center text-white mb-20'>
       See Guideline Buddy in <br />Action - Schedule a Demo
       </h1>
-      <Button href="/" title="Get Started" className="py-[14px] px-14 w-fit drop-shadow-lg" />
+      <Button href="/pricing" title="Book A Time!" className="py-[14px] px-14 w-fit drop-shadow-lg" />
     </div>
     </div>
   );

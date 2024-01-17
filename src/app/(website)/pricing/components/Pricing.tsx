@@ -5,7 +5,7 @@ import Button from "../../components/shared/Button";
 
 const Pricing = () => {
   return (
-    <div className="container pb-20 xl:pb-64">
+    <div className="container ">
       <div className="py-[177px]">
         <h1 className="text-center">AI Powered, Human Driven</h1>
         <p className="text-xl text-center">Pick The Plan That Works for You</p>

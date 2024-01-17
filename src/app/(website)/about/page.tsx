@@ -14,7 +14,8 @@ const Page = () => {
       <AboutMissionVision />
       <AboutMission />
       <AboutStory />
-      <AboutDetails />
+      {/* <AboutDetails /> */}
+      
       <AboutFounder />
     </div>
   );

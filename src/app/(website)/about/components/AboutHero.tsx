@@ -42,7 +42,7 @@ const AboutHero = () => {
           inclusive for all.
         </h5>
         <Button
-            href="/"
+            href="/pricing"
             title="Start Searching!"
             className="py-[14px]  w-fit "
           />

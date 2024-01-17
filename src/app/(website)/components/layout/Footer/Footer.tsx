@@ -34,9 +34,17 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-6 items-end">
           <div className="flex gap-4">
-            <FaInstagram className="w-11 h-11  text-white" />
+            <Link href="https://www.instagram.com/guidelinebuddy/">
+              <FaInstagram className="w-11 h-11  text-white" />
+            </Link>
+            <Link href="https://www.facebook.com/profile.php?id=61553580070365&mibextid=hIlR13">
             <FaFacebook className="w-11 h-11  text-white" />
+            </Link>
+            <Link href="https://www.linkedin.com/company/guidelinebuddy/">
             <FaLinkedin className="w-11 h-11  text-white" />
+            </Link>
+            
+            
           </div>
           <h5 className="text-white font-atkinsonHyperlegible">
             Follow us on socials
@@ -48,11 +56,11 @@ const Footer = () => {
         <div className="bg-[#5C5959] h-[1px]"></div>
         <div className="flex justify-between items-center  py-12">
           <p className="text-base">
-            2023 Guideline Buddy. All rights reserved.
+            2024 Guideline Buddy. All rights reserved.
           </p>
           <div className="text-base flex gap-8 justify-between ">
             <Link href="/">Privacy Policy</Link>
-            <Link href="/">Resources</Link>
+            {/* <Link href="/">Resources</Link> */}
             <Link href="/">Terms of Service</Link>
           </div>
         </div>

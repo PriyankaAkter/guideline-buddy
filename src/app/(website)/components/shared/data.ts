@@ -6,19 +6,19 @@ export const items = [
         id: 1,
         title: "AI as a Friend",
         description: "We’re making AI accessible and easy to understand so it becomes your trusted assistant that simplifies your life and guides your work.",
-        image: "/"
+        image: "/assets/images/icons1.png"
     },
     {
         id: 2,
         title: "Streamlined Success",
         description: "We optimize at every turn, creating a smooth user experience from signing up to finding the exact guideline you need to move on to the next task.",
-        image: "/"
+        image: "/assets/images/icons2.png"
     },
     {
         id: 2,
         title: "Personalized Solutions",
         description: "Every chat is personalized, giving you tailored recommendations and insights to your questions. It makes loan structuring simpler and faster, just for you!",
-        image: "/"
+        image: "/assets/images/icons3.png"
     }
 ]
 
@@ -65,34 +65,35 @@ export const blogs = [
 export const features = [
     {
         id: 1,
+        title: "Close More Loans",
+        description: "Our goal is to save you time and assist you in accurately structuring loans, so you can help more borrowers.",
+        image: "/assets/images/f8.png"
+    },
+    {
+        id: 2,
         title: "Efficiency and Time Saving",
         description: "Guideline Buddy streamlines the mortgage process, saving professionals hours of manual searching.",
         image: "/assets/images/f4.png"
     },
     {
-        id: 2,
+        id: 3,
         title: "Accessible for All",
         description: "Whether you’re a seasoned pro or a mortgage newcomer, our platform is accessible for all and intuitive to use.",
         image: "/assets/images/f5.png"
     },
     {
-        id: 3,
+        id: 4,
         title: "Accuracy and Risk Reduction",
         description: "Ensure you have access to the latest guidelines, minimizing the potential for errors and disqualifications.",
         image: "/assets/images/f6.png"
     },
     {
-        id: 4,
+        id: 5,
         title: "Innovation and Industry Leadership",
         description: "We are pioneers in our field, committed to setting new industry standards, putting mortgage professionals at the forefront",
         image: "/assets/images/f7.png"
     },
-    {
-        id: 5,
-        title: "Empower Your Clients",
-        description: "Our goal is to empower you to empower your clients and foster the dream of homeownership for all.",
-        image: "/assets/images/f8.png"
-    }
+    
 ]
 
 export const industries = [

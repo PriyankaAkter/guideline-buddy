@@ -23,7 +23,7 @@ const HomeFeatures = () => {
           We believe in AI as a partner, not a replacement. Our platform bridges the gaps within the mortgage industry, offering a level playing field for both tech-savvy newcomers and seasoned professionals alike. Learn how our human-centered approach empowers you by handling the grunt work, so you can focus on what you do best.
           </p>
           <Button
-            href="/"
+            href="/features"
             title="See Our Approach in Action"
             className="py-[14px] px-14 w-fit "
           />
@@ -52,7 +52,7 @@ const HomeFeatures = () => {
           Discover why top mortgage professionals choose Guideline Buddy. From advanced AI tools to a commitment to fair lending, we provide the competitive edge you need in today's dynamic market. Explore the features that set us apart.
           </p>
           <Button
-            href="/"
+            href="/features"
             title="Elevate Your Mortgage Business"
             className="py-[14px] px-14 w-fit "
           />

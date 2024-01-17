@@ -8,12 +8,11 @@ import HomeAccordion from "../components/views/home/HomeAccordion";
 const Page = () => {
   return (
     <div>
-      
       <Pricing />
-      <PricingHeading />
-      <FeatureHero />
+      {/* <PricingHeading /> */}
+      {/* <FeatureHero /> */}
       <FeatureCallToAction />
-      <PricingBlog />
+      {/* <PricingBlog /> */}
       <HomeAccordion />
     </div>
   );

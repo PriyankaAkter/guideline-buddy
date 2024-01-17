@@ -25,7 +25,7 @@ const HomeWorking = () => {
             
           >
             <div className='relative w-24 h-24 sm:w-[157px] sm:h-[157px] -top-12 sm:-top-20  '>
-              <Image src='/assets/images/icons1.png' fill alt='image' />
+              <Image src={item?.image} fill alt='image' />
             </div>
             
 

@@ -16,15 +16,15 @@ const BlogHero = () => {
           />
         </div>
         <div>
-          <h2>Here is a title to highlight the featured article</h2>
+          <h2>Here is a title to highlight <br />the featured article</h2>
           <div className="flex gap-10 mb-10">
             <h6>Date: Thur. Aug. 12, 2023</h6>
             <h6>Author: John Doe</h6>
           </div>
-          <p className="mb-10">
-            Here is a description of the featured blog article to give viewers a
-            glimpse into the subject matter. Make it engaging and don’t give too
-            much away so that they want to read more.
+          <p className="mb-10 ">
+            Here is a description of the featured blog article to give <br />viewers a
+            glimpse into the subject matter. Make it engaging <br />and don’t give too
+            much away so that they want to read <br />more.
           </p>
           <Button href="/" title="Read More" />
         </div>

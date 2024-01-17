@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Button from "../../shared/Button";
 
 
 const DesktopNB = () => {
@@ -19,11 +20,16 @@ const DesktopNB = () => {
         </div>
         <div className="flex justify-between items-center gap-[66px] ">
           <Link href="/" className={` text-2xl font-semibold font-poppins ${pathname==="/" ? 'text-[#C87EDB]':'text-[#240066]'}`}>Home</Link>
-          <Link href="/about" className={` text-2xl font-semibold font-poppins ${pathname==="/about" ? 'text-[#C87EDB]':'text-[#240066]'}`}>About Us</Link>
           <Link href="/features" className={` text-2xl font-semibold font-poppins ${pathname==="/features" ? 'text-[#C87EDB]':'text-[#240066]'}`}>Features</Link>
           <Link href="/pricing" className={` text-2xl font-semibold font-poppins ${pathname==="/pricing" ? 'text-[#C87EDB]':'text-[#240066]'}`}>Pricing</Link>
-          <Link href="/blog" className={` text-2xl font-semibold font-poppins ${pathname==="/blog" ? 'text-[#C87EDB]':'text-[#240066]'}`}>Blogs</Link>
+          <Link href="/blog" className={` text-2xl font-semibold font-poppins ${pathname==="/blog" ? 'text-[#C87EDB]':'text-[#240066]'}`}>Blog</Link>
+          <Link href="/about" className={` text-2xl font-semibold font-poppins ${pathname==="/about" ? 'text-[#C87EDB]':'text-[#240066]'}`}>About Us</Link>
           <Link href="/contact" className={` text-2xl font-semibold font-poppins ${pathname==="/contact" ? 'text-[#C87EDB]':'text-[#240066]'}`}>Contact Us</Link>
+          <Button
+            href="/log-in"
+            title="Login"
+            className="w-fit"
+          />
         </div>
       </div>
     </div>
