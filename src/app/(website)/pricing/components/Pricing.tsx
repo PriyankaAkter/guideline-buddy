@@ -9,6 +9,31 @@ const Pricing = () => {
       <div className="py-[177px]">
         <h1 className="text-center">AI Powered, Human Driven</h1>
         <p className="text-xl text-center">Pick The Plan That Works for You</p>
+        <div className="text-center mt-24">
+          <div className="border border-[#4B30BA] w-[260px] h-[60px] rounded-[33px] mx-auto flex gap-3 items-center justify-center">
+            <button
+              className="rounded-[33px] text-[18px] font-medium text-white py-2 px-[26px]"
+              style={{
+                background:
+                  "linear-gradient(276deg, #4B30BA -9.31%, #D950E8 105.83%)",
+              }}
+            >
+              Monthly
+            </button>
+            <button
+              className="rounded-[33px] text-[18px] font-medium  text-[#6B7280] py-2 px-[26px] "
+              // style={{
+              //   background:
+              //     "linear-gradient(276deg, #4B30BA -9.31%, #D950E8 105.83%)",
+              // }}
+            >
+              Yearly
+            </button>
+          </div>
+          <p className="text-[#9E69FF] text-[14px] font-normal mt-3">
+            Save 20% in Yearly billing
+          </p>
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 2xl:gap-20 xl:place-items-center ">
         {pricing?.map((price: any, index: number) =>
@@ -23,29 +48,27 @@ const Pricing = () => {
               <div
                 className={` bg-[#EEE5FF] pt-[74px]  pb-[56px] h-[690px] px-20  rounded-[60px] flex flex-col    justify-between items-center `}
               >
-                
-                  <h4 className="text-[32px] text-[#0F1114]  font-poppins text-center ">
-                    {price?.title}
-                  </h4>
-                  <h1 className="text-[60px] text-[#0F1114]  text-center font-atkinsonHyperlegible font-normal ">
-                    {price?.subtitle}
-                  </h1>
+                <h4 className="text-[32px] text-[#0F1114]  font-poppins text-center ">
+                  {price?.title}
+                </h4>
+                <h1 className="text-[60px] text-[#0F1114]  text-center font-atkinsonHyperlegible font-normal ">
+                  {price?.subtitle}
+                </h1>
 
-                  {price?.description?.map((item: any, index: number) => (
-                    <ul
-                      key={index}
-                      className="list-disc text-xl xl:text-2xl font-poppins  w-full xl:w-[320px]"
-                    >
-                      <li>{item}</li>
-                    </ul>
-                  ))}
+                {price?.description?.map((item: any, index: number) => (
+                  <ul
+                    key={index}
+                    className="list-disc text-xl xl:text-2xl font-poppins  w-full xl:w-[320px]"
+                  >
+                    <li>{item}</li>
+                  </ul>
+                ))}
 
-                  <Button
-                    href="/"
-                    title="Get Started"
-                    className="py-[14px] px-14 w-fit "
-                  />
-                
+                <Button
+                  href="/"
+                  title="Get Started"
+                  className="py-[14px] px-14 w-fit "
+                />
               </div>
             </div>
           ) : (
